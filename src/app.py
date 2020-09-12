@@ -58,7 +58,7 @@ def getTranslation():
     curl -X GET --header 'language:no' --header 'text:Akkurat'  {INSERT IP}/get
     curl -X GET --header 'language:es' --header 'text:Suecia'  {INSERT IP}/get
 
-    The above API calls, provided that translations have been set with the SET 
+    The above API calls, provided that translations have been set with the SET method.
 
     """
     headers = request.headers
