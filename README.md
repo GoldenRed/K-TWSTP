@@ -1,6 +1,6 @@
 # K-TWSTP - Repo
 Intentionally vague name to avoid others from googling this task.
-Server running on knightec.yared.se.
+Server running on 13.53.182.183 but once propagated knightec.yared.se will be available.
 
 ## Interpretation
 I interpreted this task as a translation service from any language into Swedish. So in your POST you send the API server a language (e.g., 'en' for English), the text in that language (e.g., 'Good Morning') and the corresponding translation in Swedish (i.e. 'God Morgon).
@@ -18,17 +18,17 @@ The API server has the following two methods:
 
 ### set: Allows you to set a translation by POST:ing to this 
 ```bash
-curl -X POST --header 'language:en' --header 'text:Good Morning' --header 'translation:God Morgon'  {INSERT IP}/set
-curl -X POST --header 'language:no' --header 'text:Akkurat' --header 'translation:Precis'  {INSERT IP}/set
-curl -X POST --header 'language:es' --header 'text:Suecia' --header 'translation:Sverige'  {INSERT IP}/set
+curl -X POST --header 'language:en' --header 'text:Good Morning' --header 'translation:God Morgon'  knightec.yared.se/set
+curl -X POST --header 'language:no' --header 'text:Akkurat' --header 'translation:Precis'  knightec.yared.se/set
+curl -X POST --header 'language:es' --header 'text:Suecia' --header 'translation:Sverige'  knightec.yared.se/set
 ```
 
 The SET method associates a Swedish translation with a specific language->text entry, provided with headers as above.
 
 ### get: Allows you to get a translation by GET:ing to this
 ```bash
-curl -X GET --header 'language:en' --header 'text:Good Morning'  {INSERT IP}/get
-curl -X GET --header 'language:no' --header 'text:Akkurat'  {INSERT IP}/get
-curl -X GET --header 'language:es' --header 'text:Suecia'  {INSERT IP}/get
+curl -X GET --header 'language:en' --header 'text:Good Morning'  knightec.yared.se/get
+curl -X GET --header 'language:no' --header 'text:Akkurat'  knightec.yared.se/get
+curl -X GET --header 'language:es' --header 'text:Suecia'  knightec.yared.se/get
 ```
 Provided that the translations have been set with the SET method, the above API calls will return "God Morgon", "Precis" and "Sverige".
