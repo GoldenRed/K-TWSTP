@@ -1,2 +1,5 @@
-infra/.terraform
 src/env
+infra/.terraform
+infra/KTWSTP_EC2_key.pem
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
