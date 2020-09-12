@@ -12,7 +12,7 @@ The server does not enforce a specific way of writing the language ('en', 'eng',
 Contains Terraform code to provision an Ubuntu server on AWS.
 
 ## Src
-Contains source code to run the API server on Python33 Flask.
+Contains source code to run the API server on Python3 Flask.
 
 The API server has the following two methods:
 
