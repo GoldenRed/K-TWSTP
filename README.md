@@ -1,6 +1,6 @@
 # K-TWSTP - Repo
 Intentionally vague name to avoid others from googling this task.
-Server running on 13.53.182.183 but once propagated knightec.yared.se will be available.
+Server running on 13.53.131.29 but once propagated knightec.yared.se will be available.
 
 ## Interpretation
 I interpreted this task as a translation service from any language into Swedish. So in your POST you send the API server a language (e.g., 'en' for English), the text in that language (e.g., 'Good Morning') and the corresponding translation in Swedish (i.e. 'God Morgon).
